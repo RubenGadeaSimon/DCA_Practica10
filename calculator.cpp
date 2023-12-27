@@ -5,10 +5,10 @@ using namespace std;
 int main() {
     char operador;
     double num1, num2, resultado;
-    //Implementados cambios para poder realizar la division
+    //Implementados cambios para poder realizar la multiplicacion
     
     // Solicitar al usuario que ingrese la operación
-    cout << "¿Que operacion quieres realizar?(+ , -, /): ";
+    cout << "¿Que operacion quieres realizar?(+ , - , / , *): ";
     cin >> operador;
 
     // Solicitar al usuario que ingrese dos números
@@ -34,6 +34,9 @@ int main() {
                 cout << "Error: No se puede dividir por cero." << endl;
                 return 1;
             }
+            break;
+        case '*':
+            resultado = num1 * num2;
             break;
         default:
             cout << "Operador no valido." << endl;
