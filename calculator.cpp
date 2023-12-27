@@ -36,7 +36,7 @@ int main() {
             }
             break;
         case '*':
-            resultado = num1 *d num2;
+            resultado = num1 * num2;
             break;
         default:
             cout << "Operador no valido." << endl;
